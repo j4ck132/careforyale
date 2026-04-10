@@ -583,12 +583,22 @@ body {
   }
 
   .care-tabs-inner {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 
   .care-tab {
-    padding: 20px 16px;
+    padding: 16px 12px;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .care-tab-label {
+    display: none;
+  }
+
+  .care-tab-letter {
+    font-size: 1.75rem;
   }
 
   .section {
