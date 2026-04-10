@@ -255,6 +255,89 @@ body {
   color: var(--text);
 }
 
+/* --- Section Banners --- */
+
+.section-banner {
+  position: relative;
+  padding: 64px 24px;
+  overflow: hidden;
+}
+
+.section-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center top;
+  opacity: 0.4;
+}
+
+.section-banner--c .section-banner-overlay {
+  background-image: url('images/yale-campus.jpg');
+  background-position: center 70%;
+}
+
+.section-banner--a .section-banner-overlay {
+  background-image: url('images/yale-phelps.jpg');
+  background-position: center;
+}
+
+.section-banner--r .section-banner-overlay {
+  background-image: url('images/together-3.jpg');
+  background-position: center 30%;
+}
+
+.section-banner--e .section-banner-overlay {
+  background-image: url('images/together.jpg');
+  background-position: center 30%;
+}
+
+.section-banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.section-banner-letter {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: rgba(255, 255, 255, 0.25);
+  line-height: 1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-banner-title {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: #ffffff;
+  margin-bottom: 16px;
+  letter-spacing: -0.015em;
+}
+
+.section-banner-lede {
+  font-size: 1.0625rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  max-width: 680px;
+}
+
+.section-banner--c {
+  background: #2e3a6e;
+}
+
+.section-banner--a {
+  background: #3b2e6e;
+}
+
+.section-banner--r {
+  background: #2e5c6e;
+}
+
+.section-banner--e {
+  background: #1f1c52;
+}
+
 /* --- Content Sections --- */
 
 .section {
@@ -517,6 +600,14 @@ body {
 
   .section-head h2 {
     font-size: 1.4rem;
+  }
+
+  .section-banner {
+    padding: 48px 20px;
+  }
+
+  .section-banner-letter {
+    font-size: 3rem;
   }
 
   .candidate {
